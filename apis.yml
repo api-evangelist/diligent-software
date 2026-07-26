@@ -1,23 +1,87 @@
 aid: diligent-software
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/diligent-software.png
 name: Diligent Software
-description: Diligent Software is a company surfaced as a portfolio company of battery-ventures and added
-  to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment
-  pipeline.
+description: >-
+  Diligent Software is an entry harvested from Battery Ventures' public
+  "list of all companies" (https://www.battery.com/list-of-all-companies/),
+  where it is marked with an asterisk denoting an EXITED investment. Battery
+  publishes only the company name for this entry — no URL, no sector, no
+  description, and no acquisition or IPO detail — so the underlying company
+  could not be positively identified during enrichment. It appears to be a
+  legacy/defunct or long-since-acquired enterprise software investment rather
+  than an operating API provider. The only live host at diligentsoftware.com is
+  an unrelated single-proprietor custom .NET software consultancy in Liberty
+  Hill, Texas (Peter Stephens), whose static site has not been updated since
+  February 2014; it is NOT treated as this company. This profile is explicitly
+  NOT Diligent Corporation, the GRC/board-management vendor at diligent.com —
+  that company is catalogued separately in the network as diligent-boards
+  (developer.diligent.com, HighBond/Entities/ESG/Workflow APIs) — and it is NOT
+  Diligent AI (godiligent.ai), the KYC/AML compliance API catalogued as
+  diligent. No developer portal, documentation, OpenAPI, SDK, package,
+  well-known surface, or event surface was found for this entry. No artifacts
+  were produced because none exist to harvest.
 url: https://raw.githubusercontent.com/api-evangelist/diligent-software/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
 - battery-ventures
 x-tier: stub
-x-tier-reason: portfolio-lead
+x-tier-reason: unidentified-exited-portfolio-entry
+x-disambiguation:
+  not: diligent-boards
+  not_also: diligent
+  note: >-
+    Distinct from Diligent Corporation (diligent.com, network slug
+    diligent-boards) and Diligent AI (godiligent.ai, network slug diligent).
+x-research:
+  battery_listing: https://www.battery.com/list-of-all-companies/
+  battery_status: exited (asterisk in Battery's published list)
+  battery_publishes_url: false
+  probes:
+  - host: diligentsoftware.com
+    dns: resolves (AWS S3 / CloudFront static hosting)
+    http_status: 301 -> http://www.diligentsoftware.com/ (200)
+    https: connection timed out (no TLS on S3 website endpoint)
+    last_modified: '2014-02-17'
+    identified_as: unrelated Texas .NET consultancy (Peter Stephens); not this company
+  - host: diligent-software.com
+    dns: NXDOMAIN
+  - host: diligentsoftware.io
+    dns: NXDOMAIN
+  - host: diligentsoftware.net
+    dns: NXDOMAIN
+  api_surface_found: false
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
+- Venture Backed
+- Battery Ventures
+- Portfolio Lead
+- Exited
+- Unidentified
+- Software
+- No API Surface
 apis: []
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-20'
+  status: nochange
+  artifacts_added: 0
+  pass: local-v1
