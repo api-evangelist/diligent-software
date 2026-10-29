@@ -64,16 +64,28 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Harvested from Battery Ventures' public [list of all companies](https://www.battery.com/list-of-all-companies/), where the entry is marked as an **exited** investment. Battery publishes only the company name — no URL, sector, description, or exit detail — so the underlying company could not be positively identified during enrichment.
+Diligent Software is an entry harvested from Battery Ventures' public "list of all companies" (https://www.battery.com/list-of-all-companies/), where it is marked with an asterisk denoting an EXITED investment. Battery publishes only the company name for this entry — no URL, no sector, no description, and no acquisition or IPO detail — so the underlying company could not be positively identified during enrichment. It appears to be a legacy/defunct or long-since-acquired enterprise software investment rather than an operating API provider. The only live host at diligentsoftware.com is an unrelated single-proprietor custom .NET software consultancy in Liberty Hill, Texas (Peter Stephens), whose static site has not been updated since February 2014; it is NOT treated as this company. This profile is explicitly NOT Diligent Corporation, the GRC/board-management vendor at diligent.com — that company is catalogued separately in the network as diligent-boards (developer.diligent.com, HighBond/Entities/ESG/Workflow APIs) — and it is NOT Diligent AI (godiligent.ai), the KYC/AML compliance API catalogued as diligent. No developer portal, documentation, OpenAPI, SDK, package, well-known surface, or event surface was found for this entry. No artifacts were produced because none exist to harvest.
 
-**No API surface was found.** No developer portal, documentation, OpenAPI, SDKs, packages, `.well-known` surface, or event surface exists for this entry, so no artifacts were produced.
+**Areas:** Company · Battery Ventures · Unidentified · Software
 
-## Disambiguation
+## Diligent Software on APIs.io
 
-This profile is **not**:
+Everything profiled for Diligent Software is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/diligent-software/](https://apis.io/providers/diligent-software/)** — or go straight to one of the APIs or properties below.
 
-- **Diligent Corporation** (diligent.com) — the GRC / board-management vendor with a real developer portal at developer.diligent.com. Catalogued as [`diligent-boards`](../diligent-boards/).
-- **Diligent AI** (godiligent.ai) — the KYC/AML compliance API. Catalogued as [`diligent`](../diligent/).
-- The dormant single-proprietor .NET consultancy at `diligentsoftware.com` (Liberty Hill, TX), whose static site has not changed since February 2014.
+## API Evangelist rating
 
-Backed by: battery-ventures (exited)
+**Unrated** — no public website could be reached for this company, so there was almost nothing to measure and nothing a reader could check.
+
+This is not a score of zero. No rating is published for this company. If that is wrong because something public exists that we missed, say so on this repository or email [info@apievangelist.com](mailto:info@apievangelist.com) and it will be re-run — free, and no justification needed.
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Diligent Software: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/diligent-software/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
